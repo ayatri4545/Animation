@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+</head>
+<body>
+    <section>
+    <div class="right">
+        <img  class="img"  height="300px" width="500px" src="./Apple_announce-iphone12pro_10132020.jpg.landing-big_2x.jpg" alt="">
+    </div>
+    <div class="left">
+        <h1>IPHONE</h1>
+    <P>"Think Different"</P>
+    <button>Buy Now</button> </div>
+    
+        
+    </div>
+    </section>
+    <script>
+        gsap.from(".img",3,{
+           opacity:0, 
+            x:500,
+        },
+       gsap.from(".left",3,{
+            x:-300,
+        })
+            
+        
+        
+
+        )
+    </script>
+</body>
+</html>
